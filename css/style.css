@@ -165,25 +165,6 @@ body{
     z-index:99999;
 
 }
-section{
-
-    background:rgba(255,255,255,.88);
-
-    backdrop-filter:blur(5px);
-
-    border-radius:28px;
-
-   box-shadow:
-0 12px 35px rgba(120,90,180,.12),
-0 2px 6px rgba(0,0,0,.05);
-
-    border:1px solid rgba(139,111,191,.15);
-
-    padding:50px;
-
-    margin:45px auto;
-
-}
 .flap {
     transform-origin: top;
     transition: transform 0.8s ease;
@@ -622,7 +603,7 @@ footer p{
     padding: 10px 16px;
     border: none;
     border-radius: 50px;
-    background: #d4af37;
+    background: #f8f7f4;
     color: white;
     cursor: pointer;
     z-index: 9999;
@@ -745,7 +726,7 @@ section{
 
     max-width:1100px;
 
-    margin:70px auto;
+    margin:45px auto;
 
     padding:70px 60px;
 
@@ -847,4 +828,35 @@ section>*{
 .hero-invitation::before,
 .hero-invitation::after {
     display: none;
+}
+/*==================================
+        RESPONSIVE CELULAR
+===================================*/
+@media (max-width:768px){
+
+    section{
+        width:95%;
+        padding:35px 20px;
+        margin:30px auto;
+        border-radius:25px;
+    }
+
+    .contenido-bienvenida h1{
+        font-size:48px;
+    }
+
+    .contenido-bienvenida p{
+        font-size:20px;
+    }
+
+    #abrirInvitacion{
+        padding:14px 34px;
+        font-size:18px;
+    }
+
+    #musicBtn{
+        bottom:15px;
+        right:15px;
+    }
+
 }
