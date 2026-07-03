@@ -1,93 +1,216 @@
-.hero-invitation {
+/*==================================
+            PORTADA
+==================================*/
+
+.hero-invitation{
     position: relative;
-    height: 100vh;
-    .hero-invitation {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    min-height:100svh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     text-align: center;
-    color: white;
+    color: #fff;
 }
 
-.hero-video {
+.hero-video{
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: 0;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.4);
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-.overlay {
+.overlay{
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,.35);
+    z-index: 1;
 }
 
-.hero-content {
+.hero-content{
     position: relative;
     z-index: 2;
+    width: min(90%, 900px);
+    margin: auto;
     padding: 20px;
 }
 
-.hero-content h2 {
+.hero-content h2{
     font-family: 'Cormorant Garamond', serif;
-    letter-spacing: 5px;
     text-transform: uppercase;
-    font-size: 18px;
+    letter-spacing: .3em;
+    font-size: clamp(16px, 2vw, 22px);
     margin-bottom: 20px;
 }
 
-.hero-content h1 {
-    font-size: 72px;
-    line-height: 1.1;
-    margin-bottom: 30px;
+.hero-content h1{
     font-family: 'Great Vibes', cursive;
-}
-
-.hero-content h1 span {
-    display: block;
-    font-size: 40px;
-    margin: 15px 0;
-}
-
-.fecha {
-    font-size: 28px;
+    font-size: clamp(4rem, 10vw, 6rem);
+    line-height: 1.1;
     margin-bottom: 25px;
 }
 
-.frase {
-    max-width: 700px;
-    margin: auto;
-    font-style: italic;
-    font-size: 22px;
+.hero-content h1 span{
+    display: block;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 10px 0;
 }
 
-.versiculo {
+.fecha{
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    margin-bottom: 20px;
+}
+
+.frase{
+    width: min(90%, 650px);
+    margin: 0 auto;
+    font-style: italic;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    line-height: 1.6;
+}
+
+.versiculo{
     margin-top: 15px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.hero-content h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    font-size:clamp(16px,3vw,22px);
+
+    margin-bottom:20px;
+
+}
+
+.hero-content h1{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:clamp(60px,12vw,90px);
+
+    line-height:1.05;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content h1 span{
+
+    display:block;
+
+    font-size:clamp(30px,6vw,45px);
+
+    margin:10px 0;
+
+}
+
+.fecha{
+
+    font-size:clamp(22px,5vw,32px);
+
+    margin-bottom:20px;
+
+}
+
+.frase{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:clamp(18px,4vw,24px);
+
+    line-height:1.6;
+
+}
+
+.versiculo{
+
+    font-size:clamp(16px,3vw,20px);
+
+    margin-top:12px;
+
+}
+@media (max-width:768px){
+
+    .hero-content{
+
+        padding:15px;
+
+    }
+
+    .hero-content h1{
+
+        line-height:1.15;
+
+    }
+
+    .hero-content h2{
+
+        letter-spacing:2px;
+
+    }
+
+}
+@media (max-width:768px){
+
+    section{
+        width:95%;
+        padding:35px 20px;
+        margin:30px auto;
+        border-radius:25px;
+    }
+
+    .hero-content{
+        padding:20px 15px;
+    }
+
+    .hero-content h2{
+        letter-spacing:.15em;
+    }
+
+    #musicBtn{
+        bottom:15px;
+        right:15px;
+    }
+
+    .contenido-bienvenida h1{
+        font-size: clamp(2.8rem, 10vw, 4rem);
+    }
+
+    .contenido-bienvenida p{
+        font-size:1.2rem;
+    }
+}
+.hero-content{
+    position: relative;
+    z-index: 2;
+
+    width: min(90%,900px);
+
+    margin: auto;
+
+    padding: 20px;
+
+    transform: translateY(25px);
+}
+@media (max-width:768px){
+
+    .hero-content{
+
+        transform:translateY(45px);
+
+    }
+
 }
