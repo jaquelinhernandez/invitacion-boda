@@ -1,0 +1,126 @@
+.countdown-section{
+
+    padding:70px 20px;
+    text-align:center;
+    background:#f8f5f2;
+
+}
+
+.countdown-section h2{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:2.2rem;
+    margin-bottom:35px;
+    color:#7d5a50;
+
+}
+
+.countdown{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.countdown div{
+
+    background:white;
+    width:90px;
+    height:90px;
+
+    border-radius:20px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.countdown span{
+
+    font-size:2rem;
+    font-weight:bold;
+    color:#7d5a50;
+
+}
+
+.countdown p{
+
+    margin-top:5px;
+    font-size:.9rem;
+    color:#777;
+
+}
+.countdown{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+    background:#fcfaf7;
+
+}
+
+.countdown h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:48px;
+
+    color:#7b6654;
+
+    margin-bottom:50px;
+
+}
+
+.contador{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.tiempo{
+
+    width:140px;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.tiempo span{
+
+    display:block;
+
+    font-size:52px;
+
+    color:#8b6b61;
+
+    font-weight:bold;
+
+}
+
+.tiempo p{
+
+    margin-top:10px;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:22px;
+
+}

@@ -1,0 +1,93 @@
+.hero-invitation {
+    position: relative;
+    height: 100vh;
+    .hero-invitation {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.hero-content h1 span {
+    display: block;
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.fecha {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.frase {
+    max-width: 700px;
+    margin: auto;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.versiculo {
+    margin-top: 15px;
+}
